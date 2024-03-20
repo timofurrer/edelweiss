@@ -1,4 +1,4 @@
-> weiss in neovim
+> edelweiss in neovim
 
 Lots of Lua in this repository was "stolen" from Tokyonight.
 Proper attributing incoming.

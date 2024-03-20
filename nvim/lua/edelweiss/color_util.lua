@@ -1,4 +1,4 @@
-local colors = require("weiss.colors")
+local colors = require("edelweiss.colors")
 
 local M = {}
 

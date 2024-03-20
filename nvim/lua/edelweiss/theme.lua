@@ -1,6 +1,6 @@
-local colors = require("weiss.colors")
-local util = require("weiss.util")
-local color_util = require("weiss.color_util")
+local colors = require("edelweiss.colors")
+local util = require("edelweiss.util")
+local color_util = require("edelweiss.color_util")
 
 local M = {}
 

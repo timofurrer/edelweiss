@@ -29,7 +29,7 @@ function M.load(theme)
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "weiss"
+  vim.g.colors_name = "edelweiss"
 
   M.syntax(theme.highlights)
 
