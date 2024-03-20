@@ -173,6 +173,11 @@ function M.setup()
 
     -- Flash
     FlashLabel = { bg = c.colors.Red.shade_300, fg = c.fg, style = { bold = true } },
+
+    -- Illuminate
+    IlluminatedWordText = { bg = c.colors.Slate.shade_200 },
+    IlluminatedWordRead = { bg = c.colors.Slate.shade_200 },
+    IlluminatedWordWrite = { bg = c.colors.Slate.shade_200 },
   }
 
   return theme
