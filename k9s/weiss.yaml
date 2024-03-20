@@ -1,0 +1,105 @@
+# $XDG_CONFIG_HOME/k9s/weiss.yaml
+k9s:
+  # General K9s styles
+  body:
+    fgColor: '#333333'
+    bgColor: '#ffffff'
+    logoColor: '#047857'
+
+  prompt:
+    fgColor: '#333333'
+    bgColor: '#ffffff'
+    suggestColor: '#94a3b8'
+    border:
+      default: '#333333'
+      command: '#333333'
+
+  help:
+    fgColor: '#333333'
+    bgColor: '#ffffff'
+    sectionColor: '#333333'
+    keyColor: '#333333'
+    numKeyColor: '#333333'
+
+
+  # ClusterInfoView styles
+  info:
+    fgColor: '#333333'
+    sectionColor: '#333333'
+
+  # Frame styles
+  frame:
+    # Borders styles
+    border:
+      fgColor: '#333333'
+      focusColor: '#333333'
+
+    # MenuView attributes and styles
+    menu:
+      fgColor: '#333333'
+      keyColor: '#333333'
+      # Used for favorite namespaces
+      numKeyColor: '#333333'
+
+    # CrumbView attributes for history navigation.
+    crumbs:
+      fgColor: '#ffffff'
+      bgColor: '#475569'
+      activeColor: '#333333'
+
+    # Resource status and update styles
+    status:
+      newColor: '#047857'
+      modifyColor: '#c026d3'
+      addColor: '#0891b2'
+      pendingColor: '#64748b'
+      errorColor: '#dc2626'
+      highlightcolor: '#f59e0b'
+      killColor: '#334155'
+      completedColor: '#a3a3a3'
+
+    # Border title styles.
+    title:
+      fgColor: '#333333'
+      bgColor: '#ffffff'
+      highlightColor: '#334155'
+      counterColor: '#0f766e'
+      filterColor: '#ca8a04'
+
+  # Specific views styles
+  views:
+    # TableView attributes.
+    table:
+      fgColor: '#333333'
+      bgColor: '#ffffff'
+      cursorFgColor: '#ffffff'
+      cursorBgColor: '#333333'
+      markColor: '#333333'
+      # Header row styles.
+      header:
+        fgColor: '#ffffff'
+        bgColor: '#333333'
+        sorterColor: '#ffffff'
+
+    xray:
+      fgColor: '#333333'
+      bgColor: '#ffffff'
+      cursorColor: '#333333'
+      cursorTextColor: '#ffffff'
+      graphicColor: '#f5bde6'
+
+    # YAML info styles.
+    yaml:
+      keyColor: '#333333'
+      colonColor: '#333333'
+      valueColor: green
+
+    # Logs styles.
+    logs:
+      fgColor: '#333333'
+      bgColor: '#ffffff'
+      indicator:
+        fgColor: '#ffffff'
+        bgColor: '#333333'
+        toggleOnColor: '#15803d'
+        toggleOffColor: '#f87171'
