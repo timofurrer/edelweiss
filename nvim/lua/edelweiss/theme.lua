@@ -19,6 +19,10 @@ function M.setup()
     CursorLine = { bg = c.colors.Slate.shade_200 },
 
     Directory = { fg = c.colors.Blue.shade_600 },
+    DiffAdd = { fg = c.colors.Green.shade_600 },
+    DiffChange = { fg = c.colors.Blue.shade_600 },
+    DiffDelete = { fg = c.colors.Red.shade_600 },
+    DiffText = { bg = c.colors.Blue.shade_300 },
 
     SignColumn = { bg = c.bg, fg = c.colors.Slate.shade_200 },
 
@@ -162,7 +166,109 @@ function M.setup()
     ["@type"] = { link = "Type" },
     ["@type.definition"] = { link = "Typedef" },
     ["@type.qualifier"] = { link = "@keyword" },
-    ["@variable.member"] = { link = "Member" },
+
+    --- Misc
+    -- TODO:
+    -- ["@comment.documentation"] = { },
+    ["@operator"] = { link = "Operator" }, -- For any operator: `+`, but also `->` and `*` in C.
+
+    --- Punctuation
+    ["@punctuation.delimiter"] = { fg = c.fg }, -- For delimiters ie: `.`
+    ["@punctuation.bracket"] = { fg = c.fg }, -- For brackets and parens.
+    ["@punctuation.special"] = { fg = c.fg }, -- For special symbols (e.g. `{}` in string interpolation)
+    ["@markup.list"] = { fg = c.fg }, -- For special punctutation that does not fall in the catagories before.
+    ["@markup.list.markdown"] = { fg = c.fg, bold = true },
+
+    --- Literals
+    ["@string.documentation"] = { fg = c.yellow },
+    ["@string.regexp"] = { fg = c.colors.Blue.shade_600 }, -- For regexes.
+    ["@string.escape"] = { fg = c.colors.Pink.shade_600 }, -- For escape characters within a string.
+
+    --- Functions
+    ["@constructor"] = { fg = c.colors.Pink.shade_600 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ["@variable.parameter"] = { fg = c.fg }, -- For parameters of a function.
+    -- ["@variable.parameter.builtin"] = { fg = color_util.lighten(c.yellow, 0.8, c.fg) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
+    ["@variable.parameter.builtin"] = { fg = c.fg }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
+
+    --- Keywords
+    ["@keyword"] = { link = "Keyword" }, -- For keywords that don't fall in previous categories.
+    ["@keyword.function"] = { link = "Keyword" }, -- For keywords used to define a fuction.
+
+    ["@label"] = { fg = c.fg }, -- For labels: `label:` in C and `:label:` in Lua.
+
+    --- Types
+    ["@type.builtin"] = { fg = color_util.darken(c.colors.Blue.shade_600, 0.8, c.bg) },
+    ["@variable.member"] = { link = "Member" }, -- For fields.
+    ["@property"] = { fg = c.colors.Green.shade_600 },
+
+    --- Identifiers
+    ["@variable"] = { fg = c.fg }, -- Any variable name that does not have another highlight.
+    ["@variable.builtin"] = { fg = c.colors.Red.shade_600 }, -- Variable names that are defined by the languages, like `this` or `self`.
+    ["@module.builtin"] = { fg = c.colors.Red.shade_600 }, -- Variable names that are defined by the languages, like `this` or `self`.
+
+    --- Text
+    -- ["@markup.raw.markdown"] = { fg = c.blue },
+    ["@markup.raw.markdown_inline"] = { bg = c.black, fg = c.white },
+    ["@markup.link"] = { fg = c.colors.Teal.shade_600 },
+
+    ["@markup.list.unchecked"] = { fg = c.colors.Blue.shade_600 }, -- For brackets and parens.
+    ["@markup.list.checked"] = { fg = c.colors.Green.shade_600 }, -- For brackets and parens.
+
+    ["@diff.plus"] = { link = "DiffAdd" },
+    ["@diff.minus"] = { link = "DiffDelete" },
+    ["@diff.delta"] = { link = "DiffChange" },
+
+    ["@module"] = { link = "Include" },
+
+    -- tsx
+    -- ["@tag.tsx"] = { fg = c.colors.Rose.shade_400 },
+    -- ["@constructor.tsx"] = { fg = c.colors. },
+    -- ["@tag.delimiter.tsx"] = { fg = color_util.darken(c.colors.Blue.shade_600, 0.7, c.bg) },
+
+    -- LSP Semantic Token Groups
+    ["@lsp.type.boolean"] = { link = "@boolean" },
+    ["@lsp.type.builtinType"] = { link = "@type.builtin" },
+    ["@lsp.type.comment"] = { link = "@comment" },
+    ["@lsp.type.decorator"] = { link = "@attribute" },
+    ["@lsp.type.deriveHelper"] = { link = "@attribute" },
+    ["@lsp.type.enum"] = { link = "@type" },
+    ["@lsp.type.enumMember"] = { link = "@constant" },
+    ["@lsp.type.escapeSequence"] = { link = "@string.escape" },
+    ["@lsp.type.formatSpecifier"] = { link = "@markup.list" },
+    ["@lsp.type.generic"] = { link = "@variable" },
+    ["@lsp.type.interface"] = { fg = color_util.lighten(c.colors.Blue.shade_600, 0.7, c.fg) },
+    ["@lsp.type.keyword"] = { link = "@keyword" },
+    ["@lsp.type.lifetime"] = { link = "@keyword.storage" },
+    ["@lsp.type.namespace"] = { link = "@module" },
+    ["@lsp.type.number"] = { link = "@number" },
+    ["@lsp.type.operator"] = { link = "@operator" },
+    ["@lsp.type.parameter"] = { link = "@variable.parameter" },
+    ["@lsp.type.property"] = { link = "@property" },
+    ["@lsp.type.selfKeyword"] = { link = "@variable.builtin" },
+    ["@lsp.type.selfTypeKeyword"] = { link = "@variable.builtin" },
+    ["@lsp.type.string"] = { link = "@string" },
+    ["@lsp.type.typeAlias"] = { link = "@type.definition" },
+    ["@lsp.type.unresolvedReference"] = { undercurl = true, sp = c.colors.Red.shade_600 },
+    ["@lsp.type.variable"] = {}, -- use treesitter styles for regular variables
+    ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
+    ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
+    ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
+    ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
+    ["@lsp.typemod.keyword.async"] = { link = "@keyword.coroutine" },
+    ["@lsp.typemod.keyword.injected"] = { link = "@keyword" },
+    ["@lsp.typemod.macro.defaultLibrary"] = { link = "@function.builtin" },
+    ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
+    ["@lsp.typemod.operator.injected"] = { link = "@operator" },
+    ["@lsp.typemod.string.injected"] = { link = "@string" },
+    ["@lsp.typemod.struct.defaultLibrary"] = { link = "@type.builtin" },
+    ["@lsp.typemod.type.defaultLibrary"] = { fg = color_util.darken(c.colors.Blue.shade_600, 0.8, c.bg) },
+    ["@lsp.typemod.typeAlias.defaultLibrary"] = { fg = color_util.darken(c.colors.Blue.shade_600, 0.8, c.bg) },
+    ["@lsp.typemod.variable.callable"] = { link = "@function" },
+    ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
+    ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+    ["@lsp.typemod.variable.static"] = { link = "@constant" },
+    -- NOTE: maybe add these with distinct highlights?
+    -- ["@lsp.typemod.variable.globalScope"] (global variables)
 
     -- Telescope
     TelescopeMatching = { bg = c.yellow, fg = c.black },
@@ -178,6 +284,10 @@ function M.setup()
     IlluminatedWordText = { bg = c.colors.Slate.shade_200 },
     IlluminatedWordRead = { bg = c.colors.Slate.shade_200 },
     IlluminatedWordWrite = { bg = c.colors.Slate.shade_200 },
+
+    GitSignsAdd = { link = "DiffAdd" },
+    GitSignsChange = { link = "DiffChange" },
+    GitSignsDelete = { link = "DiffDelete" },
   }
 
   return theme
