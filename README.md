@@ -3,9 +3,10 @@
 
 # edelweiss
 
-<img align="right" width="50%" src="assets/logo_v1.png" />
-
 edelweiss, `/ˈeɪdəlvaɪs/`. A de**light**ful color scheme for my personal terminal stack.
+<br>
+
+<img align="right" width="50%" src="assets/logo_v1.png" />
 
 edelweiss currently supports:
 
