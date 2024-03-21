@@ -3,9 +3,16 @@
 
 # edelweiss
 
+<img align="right" width="50%" src="assets/logo_v1.png" />
+
 edelweiss, `/ˈeɪdəlvaɪs/`. A de**light**ful color scheme for my personal terminal stack.
 
-<img align="right" width="50%" src="assets/logo_v1.png" />
+edelweiss currently supports:
+
+- [kitty](https://sw.kovidgoyal.net/kitty/) - *The fast, feature-rich, CPU based terminal emulator.*
+- [neovim](https://neovim.io/) - *Hyperextensible Vim-based text editor.*
+- [tmux](https://github.com/tmux/tmux) - *terminal multiplexer*.
+- [k9s](https://k9scli.io/) - *Kubernetes CLI to manage your clusters in style.*
 
 ***
 
