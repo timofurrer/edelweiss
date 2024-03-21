@@ -220,6 +220,9 @@ function M.setup()
 
     ["@module"] = { link = "Include" },
 
+    ["@property.yaml"] = { fg = c.colors.Blue.shade_600 },
+    ["@property.json"] = { fg = c.colors.Blue.shade_600 },
+
     -- tsx
     -- ["@tag.tsx"] = { fg = c.colors.Rose.shade_400 },
     -- ["@constructor.tsx"] = { fg = c.colors. },
