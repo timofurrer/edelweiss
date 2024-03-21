@@ -15,7 +15,7 @@ edelweiss currently supports:
 - [tmux](https://github.com/tmux/tmux) - *terminal multiplexer*.
 - [k9s](https://k9scli.io/) - *Kubernetes CLI to manage your clusters in style.*
 
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 ***
 
