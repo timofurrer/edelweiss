@@ -46,6 +46,8 @@ function M.setup()
 
     Visual = { bg = c.fg, fg = c.bg },
 
+    Whitespace = { fg = c.colors.Gray.shade_400 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
+
     -- De-facto standard groups for vim
     Constant = { fg = c.colors.Orange.shade_600 },
     String = { fg = c.colors.Green.shade_700 },
