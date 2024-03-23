@@ -55,8 +55,6 @@ Using [Lazy](https://github.com/folke/lazy.nvim#-plugin-spec) this may look like
   "timofurrer/edelweiss",
   lazy = false, -- make sure we load this during startup, because it's the main colorscheme
   priority = 1000, -- make sure to load this before all the other start plugins
-  opts = {
-  },
   config = function(plugin)
     vim.opt.rtp:append(plugin.dir .. "/nvim")
     vim.cmd([[colorscheme edelweiss]])
