@@ -1,15 +1,11 @@
 local colors = require("edelweiss.colors")
-local util = require("edelweiss.util")
 local color_util = require("edelweiss.color_util")
 
 local M = {}
 
 function M.setup()
-  local theme = {
-    colors = colors.setup()
-  }
-
-  local c = theme.colors
+  local theme = {}
+  local c = colors.setup()
 
   theme.highlights = {
     Comment = { fg = c.comment, style = { italic = true }},
@@ -275,6 +271,9 @@ function M.setup()
     -- NOTE: maybe add these with distinct highlights?
     -- ["@lsp.typemod.variable.globalScope"] (global variables)
 
+    -- Tree-sitter context
+    TreesitterContext = { bg = c.colors.Slate.shade_100 },
+
     -- Telescope
     TelescopeMatching = { bg = c.yellow, fg = c.black },
 
@@ -290,9 +289,17 @@ function M.setup()
     IlluminatedWordRead = { bg = c.colors.Slate.shade_200 },
     IlluminatedWordWrite = { bg = c.colors.Slate.shade_200 },
 
+    -- GitSign
     GitSignsAdd = { link = "DiffAdd" },
     GitSignsChange = { link = "DiffChange" },
     GitSignsDelete = { link = "DiffDelete" },
+
+    -- Neotest
+    NeotestPassed = { fg = c.colors.Green.shade_600 },
+    NeotestRunning = { fg = c.colors.Cyan.shade_600 },
+    NeotestFailed = { fg = c.colors.Red.shade_600 },
+    NeotestSkipped = { fg = c.colors.Gray.shade_600 },
+    NeotestTest = { fg = c.colors.Cyan.shade_800 },
   }
 
   return theme

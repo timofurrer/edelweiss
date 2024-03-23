@@ -1,3 +1,6 @@
+-- Parts of this module have been initially copied from 
+-- https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/util.lua
+
 local colors = require("edelweiss.colors")
 
 local M = {}
@@ -31,6 +34,5 @@ end
 function M.lighten(hex, amount, fg)
   return M.blend(hex, fg, amount)
 end
-
 
 return M

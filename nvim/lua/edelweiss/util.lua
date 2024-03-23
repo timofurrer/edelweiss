@@ -1,3 +1,6 @@
+-- Parts of this module have been initially copied from 
+-- https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/util.lua
+
 local M = {}
 
 function M.highlight(group, hl)
@@ -15,8 +18,8 @@ function M.highlight(group, hl)
   vim.api.nvim_set_hl(0, group, hl)
 end
 
-function M.syntax(syntax)
-  for group, colors in pairs(syntax) do
+function M.do_syntax(highlights)
+  for group, colors in pairs(highlights) do
     M.highlight(group, colors)
   end
 end
@@ -31,14 +34,7 @@ function M.load(theme)
   vim.o.termguicolors = true
   vim.g.colors_name = "edelweiss"
 
-  M.syntax(theme.highlights)
-
-  -- vim.api.nvim_set_hl_ns(M.ns)
-  -- if theme.config.terminal_colors then
-  --   M.terminal(theme.colors)
-  -- end
-
-  -- M.autocmds(theme.config)
+  M.do_syntax(theme.highlights)
 end
 
 return M
