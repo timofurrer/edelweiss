@@ -11,12 +11,13 @@ edelweiss currently supports:
 - [neovim](https://neovim.io/) - *Hyperextensible Vim-based text editor.*
 - [tmux](https://github.com/tmux/tmux) - *terminal multiplexer*.
 - [k9s](https://k9scli.io/) - *Kubernetes CLI to manage your clusters in style.*
+- [fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
 
 ▶️  Have a look at the [Installation](#installation) instructions!
 
 📚 Resources, like the style guide are [here](#resources).
 
-<br><br><br><br><br>
+<br><br><br><br>
 
 ***
 
@@ -84,6 +85,10 @@ k9s:
   ui:
     skin: edelweiss
 ```
+
+### fzf
+
+In your shell you can simply source `./config/edelweiss/fzf/edelweiss.sh`.
 
 ## Resources
 
