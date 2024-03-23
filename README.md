@@ -14,7 +14,7 @@ edelweiss currently supports:
 
 ▶️  Have a look at the [Installation](#installation) instructions!
 
-📚 Resources, like the style guide and sources are [here](#resources).
+📚 Resources, like the style guide are [here](#resources).
 
 <br><br><br><br>
 
