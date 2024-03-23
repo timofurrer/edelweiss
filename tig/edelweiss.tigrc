@@ -1,0 +1,13 @@
+# edelweiss, https://github.com/timofurrer/edelweiss
+
+set git-colors = no
+
+color cursor white green
+color status black default
+color search-result white yellow
+color date black default
+color author black default
+color header white black
+color title-focus white black
+color title-blur black white
+color graph-commit green default

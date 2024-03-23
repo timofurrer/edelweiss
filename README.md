@@ -12,12 +12,13 @@ edelweiss currently supports:
 - [tmux](https://github.com/tmux/tmux) - *terminal multiplexer*.
 - [k9s](https://k9scli.io/) - *Kubernetes CLI to manage your clusters in style.*
 - [fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
+- [tig](https://jonas.github.io/tig/) - text-mode interface for Git
 
 ▶️  Have a look at the [Installation](#installation) instructions!
 
 📚 Resources, like the style guide are [here](#resources).
 
-<br><br><br><br>
+<br><br><br>
 
 ***
 
@@ -89,6 +90,15 @@ k9s:
 ### fzf
 
 In your shell you can simply source `./config/edelweiss/fzf/edelweiss.sh`.
+
+### tig
+
+In your tig configuration file (possibility at `~/.tigrc`) you can source
+the edelweiss color scheme, like so:
+
+```shell
+source ~/.config/edelweiss/tig/edelweiss.tigrc
+```
 
 ## Resources
 
