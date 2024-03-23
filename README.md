@@ -14,6 +14,8 @@ edelweiss currently supports:
 
 ▶️  Have a look at the [Installation](#installation) instructions!
 
+📚 Resources, like the style guide and sources are [here](#resources).
+
 <br><br><br><br><br><br>
 
 ***
@@ -82,3 +84,22 @@ k9s:
   ui:
     skin: edelweiss
 ```
+
+## Resources
+
+### Style Guide and Colors
+
+We don't. I don't understand all of this well enough to have a *StYlE gUiDe*.
+When it looks good to me, it's approved, otherwise, it isn't. Simple. Let's go!
+
+### Why a light color scheme?
+
+Just *google* and you'll find all the answers to your questions why
+a light color scheme is better for you than your loved dark ones.
+I get it though, dark mode looks like you are some kind of a movie
+hacker. However, you need to get things done and take care of your
+health, so for god sake's, use a light color scheme and fix the
+lighting of your surrounding. Don't at me.
+If you must, I recommend
+[Tokyonight](https://github.com/folke/tokyonight.nvim)
+as a dark color scheme. It's great.
