@@ -20,6 +20,8 @@ function M.setup()
     DiffDelete = { fg = c.colors.Red.shade_600 },
     DiffText = { bg = c.colors.Blue.shade_300 },
 
+    EndOfBuffer = { fg = c.colors.Gray.shade_400 },
+
     Folded = { bg = c.fg, fg = c.bg },
 
     SignColumn = { bg = c.bg, fg = c.colors.Slate.shade_200 },
