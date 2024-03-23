@@ -16,7 +16,7 @@ edelweiss currently supports:
 
 📚 Resources, like the style guide are [here](#resources).
 
-<br><br><br><br>
+<br><br><br><br><br>
 
 ***
 
