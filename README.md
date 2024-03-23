@@ -96,6 +96,7 @@ In your shell you can simply source `./config/edelweiss/fzf/edelweiss.sh`.
 
 We don't. I don't understand all of this well enough to have a *StYlE gUiDe*.
 When it looks good to me, it's approved, otherwise, it isn't. Simple. Let's go!
+Most of the colors though are from [tailwindcss](https://tailwindcss.com/docs/customizing-colors).
 
 ### Why a light color scheme?
 
