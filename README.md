@@ -11,8 +11,8 @@ edelweiss currently supports:
 - [neovim](https://neovim.io/) - *Hyperextensible Vim-based text editor.*
 - [tmux](https://github.com/tmux/tmux) - *terminal multiplexer*.
 - [k9s](https://k9scli.io/) - *Kubernetes CLI to manage your clusters in style.*
-- [fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
-- [tig](https://jonas.github.io/tig/) - text-mode interface for Git
+- [fzf](https://github.com/junegunn/fzf) - *A command-line fuzzy finder.*
+- [tig](https://jonas.github.io/tig/) - *text-mode interface for Git*
 
 ▶️  Have a look at the [Installation](#installation) instructions!
 
