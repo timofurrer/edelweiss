@@ -94,7 +94,7 @@ from your `tmux.conf`.
 Put the `./k9s/edelweiss.yaml` file into `$XDG_CONFIG_HOME/k9s/skins/edelweiss.yaml`.
 One macOS the `k9s` directory is located at `~/Library/Application Support/k9s`.
 
-The from your `config.yaml` put a reference to `edelweiss` in `k9s.ui.skin`, like so:
+Then from your `config.yaml` put a reference to `edelweiss` in `k9s.ui.skin`, like so:
 
 ```yaml
 k9s:
