@@ -8,6 +8,7 @@ edelweiss, `/ˈeɪdəlvaɪs/`. A de**light**ful color scheme for my personal ter
 edelweiss currently supports:
 
 - [kitty](https://sw.kovidgoyal.net/kitty/) - *The fast, feature-rich, CPU based terminal emulator.*
+- [terminator](https://github.com/gnome-terminator/terminator) - *Multiple GNOME terminals in one window.*
 - [neovim](https://neovim.io/) - *Hyperextensible Vim-based text editor.*
 - [tmux](https://github.com/tmux/tmux) - *terminal multiplexer*.
 - [k9s](https://k9scli.io/) - *Kubernetes CLI to manage your clusters in style.*
@@ -47,6 +48,20 @@ to include the theme located in this repository at `./kitty/edelweiss.conf`.
 ```shell
 echo 'include ~/.config/edelweiss/kitty/edelweiss.conf' >> ~/.config/kitty/kitty.conf
 ```
+
+### terminator
+
+Add a new profile to `.config/terminator/config` or change the `background_color`, `foreground_color`
+and `palette` in your default profile.
+
+```
+[profiles]
+  [[edelweiss]]
+    background_color = "#ffffff"
+    foreground_color = "#333333"
+    palette = "#000000:#dc2626:#16a34a:#ca8a04:#2563eb:#db2777:#0891b2:#dddddd:#767676:#f87171:#4ade80:#facc15:#60a5fa:#f472b6:#22d3ee:#ffffff"
+```
+
 
 ### neovim
 
