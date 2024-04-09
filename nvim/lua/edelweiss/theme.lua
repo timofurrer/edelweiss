@@ -304,6 +304,9 @@ function M.setup()
     NeotestFailed = { fg = c.colors.Red.shade_600 },
     NeotestSkipped = { fg = c.colors.Gray.shade_600 },
     NeotestTest = { fg = c.colors.Cyan.shade_800 },
+
+    -- GitBlame (f-person/git-blame.nvim with custom highlight_group)
+    GitBlameVirtualLine = { bg = c.colors.Slate.shade_200, fg = c.comment, style = { italic = true } },
   }
 
   return theme
