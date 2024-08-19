@@ -182,7 +182,7 @@ function M.setup()
     ["@markup.list.markdown"] = { fg = c.fg, bold = true },
 
     --- Literals
-    ["@string.documentation"] = { fg = c.yellow },
+    ["@string.documentation"] = { fg = c.comment },
     ["@string.regexp"] = { fg = c.colors.Blue.shade_600 }, -- For regexes.
     ["@string.escape"] = { fg = c.colors.Pink.shade_600 }, -- For escape characters within a string.
 

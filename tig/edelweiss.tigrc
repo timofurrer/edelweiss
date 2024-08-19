@@ -1,6 +1,7 @@
 # edelweiss, https://github.com/timofurrer/edelweiss
 
 set git-colors = no
+set mouse = true
 
 color cursor white green
 color status black default
@@ -11,3 +12,6 @@ color header white black
 color title-focus white black
 color title-blur black white
 color graph-commit green default
+
+# copy the commit SHA
+bind generic 9 !@sh -c "git rev-parse --sq %(commit) | tr -d \"'\" | pbcopy"
