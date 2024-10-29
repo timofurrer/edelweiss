@@ -307,6 +307,9 @@ function M.setup()
 
     -- GitBlame (f-person/git-blame.nvim with custom highlight_group)
     GitBlameVirtualLine = { bg = c.colors.Slate.shade_200, fg = c.comment, style = { italic = true } },
+
+    -- SmartOpen (see https://github.com/danielfalk/smart-open.nvim)
+    SmartOpenDirectory = { fg = c.comment, style = { italic = true } },
   }
 
   return theme

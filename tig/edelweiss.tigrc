@@ -15,3 +15,5 @@ color graph-commit green default
 
 # copy the commit SHA
 bind generic 9 !@sh -c "git rev-parse --sq %(commit) | tr -d \"'\" | pbcopy"
+
+set main-view = id date author:full,width=30 commit-title,graph=v2,refs=true
