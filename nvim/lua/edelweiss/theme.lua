@@ -310,6 +310,9 @@ function M.setup()
 
     -- SmartOpen (see https://github.com/danielfalk/smart-open.nvim)
     SmartOpenDirectory = { fg = c.comment, style = { italic = true } },
+
+    -- RenderMarkdown
+    RenderMarkdownCodeInline = { fg = c.white, bg = c.black },
   }
 
   return theme
