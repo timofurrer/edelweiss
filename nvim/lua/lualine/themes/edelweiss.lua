@@ -6,6 +6,8 @@ local c = colors.setup()
 
 edelweiss.normal = {
   a = { bg = c.black, fg = c.white },
+  b = { bg = c.white, fg = c.black },
+  c = { bg = c.white, fg = c.black },
 }
 
 edelweiss.insert = {
